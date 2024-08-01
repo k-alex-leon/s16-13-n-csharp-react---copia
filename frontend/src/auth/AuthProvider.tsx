@@ -1,10 +1,10 @@
 import { createContext, ReactNode } from "react";
 import useAuth from "./useAuth";
 
-type AuthContextType = {
-  login : any;
-  handlerLogin: () => void;
-}
+// type AuthContextType = {
+//   login : any;
+//   handlerLogin: () => void;
+// }
 
 export const AuthContext = createContext(useAuth());
 

@@ -23,14 +23,14 @@ const InputField: React.FC<InputFieldProps> = ({
   </div>
 );
 
-const initialRegisterForm = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  phone: "",
-  password: "",
-  confirmPassword: "",
-};
+// const initialRegisterForm = {
+//   firstName: "",
+//   lastName: "",
+//   email: "",
+//   phone: "",
+//   password: "",
+//   confirmPassword: "",
+// };
 
 export default function RegisterForm() {
   // const [registerForm, setRegisterForm] = useState(initialRegisterForm);
