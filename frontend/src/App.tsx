@@ -31,9 +31,9 @@ const App: React.FC = () => {
     <div className="text-text font-Quicksand">
       <BrowserRouter>
         <Routes>
+          <Route path="/qr" element={<Qr />} />
           <Route path="/*" element={Main(false)}>
             <Route index element={<Home />} />
-            <Route path="qr" element={<Qr />} />
             <Route path="about" element={<About />} />
             <Route path="characteristics" element={<Characteristics />} />
             <Route path="loginForm" Component={LoginForm} />
