@@ -1,6 +1,7 @@
 import React from "react";
 import QRCode from "qrcode.react";
 import { FaWhatsapp } from "react-icons/fa";
+import { BASE_WEB_URL } from "../../../utils/const";
 
 interface PetInfoProps {
   id: number;
@@ -49,7 +50,7 @@ const PetInfo: React.FC<PetInfoProps> = ({
   //   ownerPhoneNumber,
   // });
 
-  const qrUrl = `https://s16-13-n-csharp-react.vercel.app/qr?id=${id}`
+  const qrUrl = `${BASE_WEB_URL}/qr?id=${id}`
 
   return (
     <div className="w-full max-w-[500px] bg-[#F9FCFA] rounded-[25px] custom-box-shadow p-[20px] sm:p-[40px] flex flex-col">

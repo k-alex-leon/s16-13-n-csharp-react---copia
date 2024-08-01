@@ -1,5 +1,6 @@
 import React from "react";
 import QRCode from "qrcode.react";
+import { BASE_WEB_URL } from "../utils/const";
 
 interface PetInfoProps {
   id?: number;
@@ -36,7 +37,7 @@ const PetInfo: React.FC<PetInfoProps> = ({
   contactNumber = "123-456-7890",
   imageUrl = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgByBT5IiAT_a2x9pUVb4VMoOrlzHH7Jrzj-HB5jzHlR4lNLMS",
 }) => {
-  const petID = `https://s16-13-n-csharp-react.vercel.app/qr?id=${id}`
+  const petID = `${BASE_WEB_URL}/qr?id=${id}`
 
   return (
     <div className="w-[483px] overflow-hidden bg-[#F9FCFA] rounded-[25px] custom-box-shadow p-[40px] flex flex-col">
